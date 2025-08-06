@@ -3,7 +3,6 @@
   border-color: #e5e7eb;
   width: 100%;
   height: max-content;
-  padding: ;
   margin-bottom: 50px;
   padding: 0.75rem 1rem;
 }
@@ -32,9 +31,6 @@
 .nav-list {
   display: flex;
   gap: 1rem;
-}
-
-.nav-item {
 }
 
 .nav-btn {
