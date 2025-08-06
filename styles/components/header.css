@@ -3,12 +3,11 @@
   border-color: #e5e7eb;
   width: 100%;
   height: max-content;
-  margin-bottom: 50px;
   padding: 0.75rem 1rem;
 }
 
 .nav-menu {
-  max-width: 75vw;
+  max-width: 65vw;
   width: 100%;
   display: flex;
   justify-content: space-between;
