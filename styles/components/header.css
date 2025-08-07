@@ -7,8 +7,9 @@
 }
 
 .nav-menu {
-  max-width: 65vw;
-  width: 100%;
+  width: 992px;
+  min-width: 65vw;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
