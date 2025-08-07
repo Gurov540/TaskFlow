@@ -1,0 +1,41 @@
+.features-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.features-heading {
+  font-size: 3.2rem;
+}
+.features-description {
+  font-size: 1rem;
+  color: #9d9d9e;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+
+.features-card {
+  display: flex;
+  column-gap: 10px;
+}
+
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.features-icon i {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 900;
+}
+
+.features-container {
+  text-align: left;
+}
