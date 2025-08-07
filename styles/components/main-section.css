@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 8rem;
 }
 
 .hero-section h1 {
