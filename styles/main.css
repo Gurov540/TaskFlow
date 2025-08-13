@@ -10,6 +10,7 @@
   list-style: none;
   font-family: -Apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
+  transition-duration: 300ms;
 }
 
 body {
@@ -18,4 +19,12 @@ body {
 
 button {
   cursor: pointer;
+}
+button:hover {
+  background-color: #4361ee;
+  color: #fff;
+}
+.btn-primary-clr:hover {
+  background-color: #3f37c9;
+  transform: translateY(-0.125rem);
 }
