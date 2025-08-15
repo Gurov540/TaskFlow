@@ -16,16 +16,20 @@
   margin: 0 auto;
 }
 
-.nav-logo {
-  font-size: 1.25rem;
-  font-weight: bold;
+.logo-container {
+  position: relative;
   background-color: #4361ee;
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+  overflow: hidden;
 }
 
 .logo-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
   color: #fff;
+  cursor: pointer;
 }
 
 .nav-list {
@@ -52,6 +56,6 @@
   border: 1px solid #4361ee;
 }
 
-.nav-logo:hover {
-  transform: rotate(-45deg);
+.logo-container:hover {
+  transform: rotate(-4deg);
 }
