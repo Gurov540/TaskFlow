@@ -94,6 +94,41 @@
         </div>
       </section>
     </main>
+
+    <!-- Modal login-form -->
+    <section id="loginModal" class="modal">
+      <div class="modal content">
+        <span class="close"></span>
+        <h2 class="Form-title">LogIn</h2>
+        <form action="">
+          <div class="form-group">
+            <label for="login-email">Email</label>
+            <input
+              type="email"
+              id="login-email"
+              name="email"
+              required
+              aria-required="true"
+              autocomplete="email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              aria-required="true"
+              autocomplete="current-password"
+            />
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
     <script src="./javascripts/main.js"></script>
   </body>
 </html>
