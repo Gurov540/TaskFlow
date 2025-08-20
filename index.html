@@ -18,12 +18,20 @@
         </div>
         <ul class="nav-list">
           <li class="nav-item">
-            <button id="login-btn" class="nav-btn btn-login btn-primary-clr">
+            <button
+              id="login-btn"
+              class="nav-btn btn-login btn-primary-clr"
+              onclick="openModal('loginModal')"
+            >
               Login
             </button>
           </li>
           <li class="nav-item">
-            <button id="register-btn" class="nav-btn btn-register">
+            <button
+              id="register-btn"
+              class="nav-btn btn-register"
+              onclick="openModal('registerModal')"
+            >
               Register
             </button>
           </li>
@@ -96,9 +104,16 @@
     </main>
 
     <!-- Modal login-form -->
-    <section id="loginModal" class="modal">
+    <section
+      id="loginModal"
+      class="modal"
+      aria-hidden="true"
+      aria-labelledby="loginTitle"
+    >
       <div class="modal-content">
-        <span class="close"><i class="fas fa-times"></i></span>
+        <span class="close" onclick="closeModal('loginModal')"
+          ><i class="fas fa-times"></i
+        ></span>
         <h2 class="Form-title">LogIn</h2>
         <form action="">
           <div class="form-group">
@@ -138,7 +153,9 @@
       aria-labelledby="registerTitle"
     >
       <div class="modal-content">
-        <span class="close"><i class="fas fa-times"></i></span>
+        <span class="close" onclick="closeModal('registerModal')"
+          ><i class="fas fa-times"></i
+        ></span>
         <h2 class="form-title">Registration</h2>
         <form action="">
           <div class="form-group">
@@ -188,7 +205,9 @@
             />
           </div>
           <div class="form-actions">
-            <button tabindex="cancel">Cancel</button>
+            <button tabindex="cancel" onclick="closeModal('registerModal')">
+              Cancel
+            </button>
             <button class="reg-btn" tabindex="submit">Register</button>
           </div>
         </form>
