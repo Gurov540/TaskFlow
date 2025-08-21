@@ -55,7 +55,3 @@
   color: #4361ee;
   border: 1px solid #4361ee;
 }
-
-.logo-container:hover {
-  transform: rotate(-4deg);
-}
