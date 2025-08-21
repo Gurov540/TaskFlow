@@ -49,7 +49,10 @@
           miss a deadline again!
         </h6>
         <div class="hero-buttons">
-          <button class="hero-button start-btn btn-primary-clr">
+          <button
+            class="hero-button start-btn btn-primary-clr"
+            onclick="openModal('registerModal')"
+          >
             Get Started - Sign Up Now
           </button>
           <button class="hero-button demo-btn">View Demo</button>
@@ -111,10 +114,26 @@
       aria-labelledby="loginTitle"
     >
       <div class="modal-content">
-        <span class="close" onclick="closeModal('loginModal')"
-          ><i class="fas fa-times"></i
-        ></span>
-        <h2 class="Form-title">LogIn</h2>
+        <span class="close" onclick="closeModal('loginModal')">
+          <i class="fas fa-times"></i>
+        </span>
+        <h2 class="form-title">LogIn</h2>
+        <div class="modalTabs">
+          <button
+            id="loginTab"
+            class="modalTab-button active"
+            onclick="closeModal('registerModal'); openModal('loginModal')"
+          >
+            Login
+          </button>
+          <button
+            id="registerTab"
+            class="modalTab-button"
+            onclick="closeModal('loginModal'); openModal('registerModal')"
+          >
+            Register
+          </button>
+        </div>
         <form action="">
           <div class="form-group">
             <label for="login-email">Email</label>
@@ -139,13 +158,17 @@
             />
           </div>
 
-          <button type="submit">Submit</button>
+          <div class="form-actions">
+            <button tabindex="cancel" onclick="closeModal('registerModal')">
+              Cancel
+            </button>
+            <button class="modal-btn" tabindex="submit">Login</button>
+          </div>
         </form>
       </div>
     </section>
 
     <!-- Modal Register-form -->
-
     <section
       id="registerModal"
       class="modal"
@@ -153,10 +176,26 @@
       aria-labelledby="registerTitle"
     >
       <div class="modal-content">
-        <span class="close" onclick="closeModal('registerModal')"
-          ><i class="fas fa-times"></i
-        ></span>
+        <span class="close" onclick="closeModal('registerModal')">
+          <i class="fas fa-times"></i>
+        </span>
         <h2 class="form-title">Registration</h2>
+        <div class="modalTabs">
+          <button
+            id="loginTab"
+            class="modalTab-button"
+            onclick="closeModal('registerModal'); openModal('loginModal')"
+          >
+            Login
+          </button>
+          <button
+            id="registerTab"
+            class="modalTab-button active"
+            onclick="closeModal('loginModal'); openModal('registerModal')"
+          >
+            Register
+          </button>
+        </div>
         <form action="">
           <div class="form-group">
             <label for="name">Name</label>
@@ -208,7 +247,7 @@
             <button tabindex="cancel" onclick="closeModal('registerModal')">
               Cancel
             </button>
-            <button class="reg-btn" tabindex="submit">Register</button>
+            <button class="modal-btn" tabindex="submit">Register</button>
           </div>
         </form>
       </div>
