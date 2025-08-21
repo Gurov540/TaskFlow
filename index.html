@@ -162,7 +162,13 @@
             <button tabindex="cancel" onclick="closeModal('registerModal')">
               Cancel
             </button>
-            <button class="modal-btn" tabindex="submit">Login</button>
+            <button
+              id="modal-log-btn"
+              class="modal-btn action-btn"
+              tabindex="submit"
+            >
+              Login
+            </button>
           </div>
         </form>
       </div>
@@ -244,10 +250,20 @@
             />
           </div>
           <div class="form-actions">
-            <button tabindex="cancel" onclick="closeModal('registerModal')">
+            <button
+              class="modal-btn"
+              tabindex="cancel"
+              onclick="closeModal('registerModal')"
+            >
               Cancel
             </button>
-            <button class="modal-btn" tabindex="submit">Register</button>
+            <button
+              id="modal-reg-btn"
+              class="modal-btn action-btn"
+              tabindex="submit"
+            >
+              Register
+            </button>
           </div>
         </form>
       </div>
